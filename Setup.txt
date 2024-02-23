@@ -1,0 +1,39 @@
+Go here and clone lazyvim into home dir
+https://www.lazyvim.org/installation
+
+Getting the latest version of neovim is kind of weird, so do this:
+Compiling from Source:
+Another option is to compile Neovim from source. This allows you to install the latest development version or a specific version that meets your requirements.
+
+Here's a simplified outline of how you can compile Neovim from source:
+
+Install Build Dependencies:
+
+Make sure you have the necessary build dependencies installed on your system. You can typically find these in the Neovim GitHub repository or documentation.
+
+Clone the Neovim Repository:
+
+Clone the Neovim repository from GitHub:
+git clone https://github.com/neovim/neovim.git
+
+git clone https://github.com/neovim/neovim.git
+Build Neovim:
+
+*If cmake is not installed:
+sudo apt install cmake
+*If GetText tools are not installed
+sudo apt install gettext
+*If ripgrep is not installed
+sudo apt install ripgrep
+
+Navigate into the cloned repository and run the build commands:
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+Adjust the CMAKE_BUILD_TYPE according to your needs (e.g., Release, Debug, etc.).
+
+After installation, you should have the latest version of Neovim available on your system. Ensure that the Neovim binary is available in your system's PATH so that you can run it from anywhere in your terminal.
